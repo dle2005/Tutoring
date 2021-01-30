@@ -23,6 +23,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.c" />
+    <ClCompile Include="2.c" />
+    <ClCompile Include="3.c" />
+    <ClCompile Include="4.c" />
+    <ClCompile Include="5.c" />
+    <ClCompile Include="6.c" />
+    <ClCompile Include="7.c" />
+    <ClCompile Include="8.c" />
+    <ClCompile Include="9.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -80,8 +88,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
