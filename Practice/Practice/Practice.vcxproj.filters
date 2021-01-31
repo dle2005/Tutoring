@@ -16,6 +16,9 @@
     <Filter Include="리소스 파일\소스 파일\week_1">
       <UniqueIdentifier>{d18e8cc5-c467-4bdb-92ed-bb58c510a3f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\소스 파일\week_2">
+      <UniqueIdentifier>{1118ebdf-c808-47a7-9758-fa254784497f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.c">
@@ -44,6 +47,21 @@
     </ClCompile>
     <ClCompile Include="9.c">
       <Filter>리소스 파일\소스 파일\week_1</Filter>
+    </ClCompile>
+    <ClCompile Include="10.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="11.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="12.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="13.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="14.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
