@@ -66,5 +66,17 @@
     <ClCompile Include="15.c">
       <Filter>리소스 파일\소스 파일\week_2</Filter>
     </ClCompile>
+    <ClCompile Include="17.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="16.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="18.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
+    <ClCompile Include="19.c">
+      <Filter>리소스 파일\소스 파일\week_2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

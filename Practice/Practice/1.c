@@ -17,4 +17,4 @@ void main() {
 
 	printf("1부터 %d까지의 합: %d\n", n, sum);
 }
-*
+*/
