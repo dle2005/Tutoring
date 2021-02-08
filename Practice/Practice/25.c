@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 void strcpy(char *arr1, char *arr2) {
@@ -12,3 +13,4 @@ void main() {
 
 	printf("%s\n", arr2);
 }
+*/

@@ -10,7 +10,7 @@ int strlen(char *s) {
 }
 
 void main() {
-	char a[] = "abc";
+	char a[] = "abc\0";
 	char b[] = { 'a','b','c' };
 
 	printf("%d\n", strlen(a));

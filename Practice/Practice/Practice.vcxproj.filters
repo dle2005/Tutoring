@@ -93,5 +93,14 @@
     <ClCompile Include="25.c">
       <Filter>리소스 파일\소스 파일\week_3</Filter>
     </ClCompile>
+    <ClCompile Include="21.c">
+      <Filter>리소스 파일\소스 파일\week_3</Filter>
+    </ClCompile>
+    <ClCompile Include="20.c">
+      <Filter>리소스 파일\소스 파일\week_3</Filter>
+    </ClCompile>
+    <ClCompile Include="26.c">
+      <Filter>리소스 파일\소스 파일\week_3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
