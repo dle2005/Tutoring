@@ -43,6 +43,9 @@
     <ClCompile Include="29.c" />
     <ClCompile Include="3.c" />
     <ClCompile Include="30.c" />
+    <ClCompile Include="31.c" />
+    <ClCompile Include="32.c" />
+    <ClCompile Include="33.c" />
     <ClCompile Include="4.c" />
     <ClCompile Include="5.c" />
     <ClCompile Include="6.c" />
