@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 void main() {
@@ -10,3 +11,4 @@ void main() {
 	printf("%s \n", str);
 	printf("%s \n", ptr);
 }
+*/
