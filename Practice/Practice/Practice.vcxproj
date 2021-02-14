@@ -60,7 +60,11 @@
     <ClCompile Include="44.c" />
     <ClCompile Include="45.c" />
     <ClCompile Include="46.c" />
+    <ClCompile Include="47.c" />
+    <ClCompile Include="48.C" />
+    <ClCompile Include="49.C" />
     <ClCompile Include="5.c" />
+    <ClCompile Include="50.c" />
     <ClCompile Include="6.c" />
     <ClCompile Include="7.c" />
     <ClCompile Include="8.c" />
