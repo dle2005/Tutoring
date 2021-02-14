@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 struct node {
@@ -20,3 +21,4 @@ void main() {
 	printf("%d %d %d\n", n1.data, n2.data, n3.data);
 	printf("%d %d %d\n", n1.link->data, n2.link->data, n3.link->data);
 }
+*/
