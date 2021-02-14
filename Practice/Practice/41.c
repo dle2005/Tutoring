@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 struct Point2D {
@@ -16,3 +17,4 @@ int main()
 
 	return 0;
 }
+*/
