@@ -1,16 +1,35 @@
-/*
 #include <stdio.h>
 
-int main() {
-	int c = 13;
-	int *p;
-	char szSubject[] = "Computer Science";
-	float matrix[3][3] = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 };
-
-	printf("(1) *&c : %d\n", *&c);
-	printf("(2) *(p = &c) : %d\n", *(p = &c));
-	printf("(3) ++*p : %d\n", ++*p);
-	printf("(4) *(szSubject + 5) : %c\n", *(szSubject + 5));
-	printf("(5) %f\n",*(*matrix + 1));
+int compare(int x, int y) {
+	if (x < y)
+		return -1;
+	else if (x == y)
+		return 0;
+	else
+		return 1;
 }
-*/
+
+int binsearch(int list[], int searchnum, int left, int right) {
+	int middle;
+	while (left <= right)
+	{
+		middle = (left + right) / 2;
+		switch(compare(list[middle], searchnum))
+		{
+		case -1:
+			return binsearch(list, searchnum, middle + 1, right);
+		case 0:
+			return middle;
+		case 1:
+			return binsearch(list, searchnum, left, middle - 1);
+		}
+	}
+	return -1;
+}
+
+int main(int argc, char *argv[])
+{
+	int list[10] = {1, 5, 8, 11, 15, 20, 27, 33, 50, 100};
+	printf("%d\n", binsearch(list, 33, 0, 9));
+	return 0;
+}

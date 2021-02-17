@@ -1,16 +1,16 @@
-
 #include <stdio.h>
-void mumble(int **p, int * q) {
-	**p = 10;
-	*p = q;
-	printf("mumble: **p = %d, *q = %d\n", **p, *q);
-}
+#include <string.h>
+
 int main() {
-	int k = 3;
-	int n = 7;
-	int *p = &k;
-	mumble(&p, &n);
-	printf("main: k = %d, n = %d, *p = %d\n", k,
-		n, *p);
+	char protoco[] = "http://";
+	char host[] = "www.ssu.ac.kr";
+	char path[] = "oslab.html";
+	char url[100];
+
+	strcat(url, protoco);
+	strcat(url, host);
+	strcat(url, path);
+
+	printf("URL = %s\n", url);
 	return 0;
 }
