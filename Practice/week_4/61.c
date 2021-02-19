@@ -12,6 +12,20 @@ int main()
         a = c = b;
         printf("%5d%5d%5d\n", a, b, c);
     }
-    
+
+    {
+        int b = 0;
+        int c = 10;
+        a = c = b;
+        printf("%5d%5d%5d\n", a, b, c);
+    }
+
+    {
+        int b = 0;
+        int c = 10;
+        a = c = b;
+        printf("%5d%5d%5d\n", a, b, c);
+    }
+
     printf("%5d%5d%5d\n", a, b, c);
 }
