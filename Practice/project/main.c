@@ -34,6 +34,7 @@ int main()
 
     while (1)
     {
+        system("clear");
         mainScreen();
 
         char input = getche();
@@ -42,11 +43,10 @@ int main()
         if (input == '1')
         {
             wordBook();
-            break;
         }
         else if (input == '2')
         {
-            signUp();
+            wordQuiz();
         }
         else if (input == '3')
         {

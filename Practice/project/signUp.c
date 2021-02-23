@@ -18,7 +18,6 @@ void signUp()
             fwrite(&user, sizeof(user), 1, fp); // 입력받은 유저정보 추가
 
             fclose(fp);
-            system("clear");
             return;
         }
     }
@@ -37,7 +36,7 @@ bool isValid(UserInfo user)
         if (strcmp(signed_user.user_id, user.user_id) == 0) // 아이디 존재 여부 판별
         {
             printf("already exist user id\n");
-            
+
             Sleep(1000);
             system("clear");
             fclose(fp);

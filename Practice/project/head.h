@@ -20,6 +20,9 @@ bool isValid(UserInfo);
 void wordBook();
 void makeDummy();
 
+// wordQuiz.c
+void wordQuiz();
+
 char user_id[20];
 
 typedef struct UserInfo {
