@@ -4,31 +4,59 @@ int main()
 {
     system("clear");
 
-    char beginScreen_input;
-
     while (1)
     {
         beginScreen(); // 로그인 or 회원가입 선택 화면
 
-        beginScreen_input = getche();
+        char input = getche();
+        system("clear");
 
-        if (beginScreen_input == '1') {
-            system("clear");
+        if (input == '1')
+        {
             login();
             break;
         }
-        else if(beginScreen_input == '2') {
-            system("clear");
+        else if (input == '2')
+        {
             signUp();
         }
-        else if(beginScreen_input == '3') {
-            system("clear");
+        else if (input == '3')
+        {
             return 0;
         }
-        else {
-            system("clear");
+        else
+        {
             printf("wrong input, enter\n");
+            Sleep(1000);
+            system("clear");
         }
     }
 
+    while (1)
+    {
+        mainScreen();
+
+        char input = getche();
+        system("clear");
+
+        if (input == '1')
+        {
+            wordBook();
+            break;
+        }
+        else if (input == '2')
+        {
+            signUp();
+        }
+        else if (input == '3')
+        {
+            return 0;
+        }
+        else
+        {
+            printf("wrong input, enter\n");
+            Sleep(1000);
+            system("clear");
+        }
+    }
 }

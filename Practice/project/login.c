@@ -28,7 +28,7 @@ void login()
                 exist = true; // 존재하면 true
                 break;
             }
-            else if(strcmp(signed_user.user_id, user.user_id) == 0 && strcmp(signed_user.user_password, user.user_password) == 0)
+            else if(strcmp(signed_user.user_id, user.user_id) == 0 && strcmp(signed_user.user_password, user.user_password) == 0) // 성공시
             {
                 strcpy(user_id, user.user_id);
                 system("clear");
