@@ -19,6 +19,7 @@ int main()
         else if (input == '2')
         {
             signUp();
+            system("clear");
         }
         else if (input == '3')
         {
