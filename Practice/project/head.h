@@ -5,6 +5,18 @@
 #include <Windows.h>
 #include <conio.h>
 
+char user_id[20];
+
+typedef struct UserInfo {
+    char user_id[20];
+    char user_password[20];
+} UserInfo;
+
+typedef struct Word {
+    char eng_name[20];
+    char kor_name[20];
+} Word;
+
 // screen.c
 void beginScreen();
 void mainScreen();
@@ -19,18 +31,11 @@ bool isValid(UserInfo);
 // wordBook.c
 void wordBook();
 void makeDummy();
+void printWordBook(FILE*, Word);
 
 // wordQuiz.c
 void wordQuiz();
 
-char user_id[20];
+// func.c
+void systemPause();
 
-typedef struct UserInfo {
-    char user_id[20];
-    char user_password[20];
-} UserInfo;
-
-typedef struct Word {
-    char eng_name[20];
-    char kor_name[20];
-} Word;

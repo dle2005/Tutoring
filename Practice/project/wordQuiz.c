@@ -4,7 +4,8 @@ void wordQuiz()
 {
     char user_txt[30];
     strcpy(user_txt, user_id);
-    strcmp(user_txt, ".txt");
+    strcat(user_txt, ".txt");
+    printf("%s\n", user_txt);
 
     FILE *fp1 = fopen("Wordbook.txt", "rb");
     FILE *fp2 = fopen(user_txt, "ab+");
@@ -44,15 +45,5 @@ void wordQuiz()
         printf("%s : %s\n", wrong_words[i].eng_name, wrong_words[i].kor_name);
     }
 
-    printf("enter ESC to exit\n");
-
-    while (1)
-    {
-        if (kbhit())
-        {
-            char c = getch();
-            if (c == 27)
-                break;
-        }
-    }
+    systemPause();
 }
