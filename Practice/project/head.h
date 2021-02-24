@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <Stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
 #include <Windows.h>
 #include <conio.h>
+#include <time.h>
 
 char user_id[20];
 
@@ -35,7 +36,7 @@ void printWordBook(FILE*, Word);
 
 // wordQuiz.c
 void wordQuiz();
-
+void getRandomNumber(int*);
 // func.c
 void systemPause();
 
