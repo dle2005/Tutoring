@@ -4,7 +4,7 @@ void wordQuiz()
 {
     srand(time(NULL));
     int random[10];
-    getRandomNumber(&random);
+    getRandomNumber(random);
 
     char user_txt[30];
     strcpy(user_txt, user_id);
@@ -15,7 +15,7 @@ void wordQuiz()
     FILE *fp2 = fopen(user_txt, "ab+");
 
     Word word;
-    Word wrong_words[10];
+    Word wrong_words[10] = {0, };
     int progress = 1;
     int wrong_index = 0;
 
@@ -45,6 +45,7 @@ void wordQuiz()
 
     printf("wrong answers\n");
 
+    qsort(wrong_words, sizeof(wrong_words) / sizeof(Word), sizeof(Word), wordCompare);
     for (int i = 0; i < wrong_index; i++)
     {
         printf("%s : %s\n", wrong_words[i].eng_name, wrong_words[i].kor_name);
@@ -53,14 +54,26 @@ void wordQuiz()
     systemPause();
 }
 
-void getRandomNumber(int *arr) {
-    for (int i = 0; i < 10; i++) {
-		arr[i] = rand() % 100;
-		for (int j = 0; j < i; j++) {
-			if (arr[i] == arr[j]) {
-				i--;
-				break;
-			}
-		}
-	}
+void getRandomNumber(int *arr)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        arr[i] = rand() % 100;
+        for (int j = 0; j < i; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                i--;
+                break;
+            }
+        }
+    }
+}
+
+int wordCompare(const void *A, const void *B)
+{
+    Word *ptrA = (Word *)A;
+    Word *ptrB = (Word *)B;
+
+    return strcmp(ptrA->eng_name, ptrB->eng_name);
 }

@@ -37,6 +37,8 @@ void printWordBook(FILE*, Word);
 // wordQuiz.c
 void wordQuiz();
 void getRandomNumber(int*);
+int wordCompare(const void*, const void*);
+
 // func.c
 void systemPause();
 
