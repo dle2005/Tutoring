@@ -35,10 +35,16 @@ void wordQuiz()
 
         if (strcmp(word.kor_name, input) != 0)
         {
+            Beep(260, 300);
             fwrite(&word, sizeof(word), 1, fp2);
 
             strcpy(wrong_words[wrong_index].eng_name, word.eng_name);
             strcpy(wrong_words[wrong_index++].kor_name, word.kor_name);
+        }
+        else {
+            Beep(260, 300);
+            Beep(290, 399);
+            Beep(330, 300);
         }
     }
     system("clear");
