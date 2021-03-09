@@ -47,7 +47,7 @@ int main()
         }
         else if (input == '2')
         {
-            wordQuiz();
+            shortAnswerQuiz();
         }
         else if (input == '3')
         {

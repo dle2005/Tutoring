@@ -1,10 +1,10 @@
 #include "head.h"
 
-void wordQuiz()
+void shortAnswerQuiz()
 {
     srand(time(NULL));
     int random[10];
-    getRandomNumber(random);
+    getRandomNumber(random, 10);
 
     char user_txt[30];
     strcpy(user_txt, user_id);
@@ -30,8 +30,13 @@ void wordQuiz()
 
         printf("%d/10\n", progress++);
 
+        
         printf("%s : ", word.eng_name);
-        scanf("%s", input);
+
+        char ch = getche();
+        if(ch == 27) return;
+        else input[0] = ch;
+        scanf("%s", input+1);
 
         if (strcmp(word.kor_name, input) != 0)
         {
@@ -60,9 +65,9 @@ void wordQuiz()
     systemPause();
 }
 
-void getRandomNumber(int *arr)
+void getRandomNumber(int *arr, int size)
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < size; i++)
     {
         arr[i] = rand() % 100;
         for (int j = 0; j < i; j++)

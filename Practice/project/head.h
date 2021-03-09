@@ -35,8 +35,8 @@ void makeDummy();
 void printWordBook(FILE*, Word);
 
 // wordQuiz.c
-void wordQuiz();
-void getRandomNumber(int*);
+void shortAnswerQuiz();
+void getRandomNumber(int*, int);
 int wordCompare(const void*, const void*);
 
 // func.c
